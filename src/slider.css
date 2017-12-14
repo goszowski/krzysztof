@@ -18,6 +18,20 @@ body {
 	background-size: cover;
 }
 
+.building {
+	font-family: 'Unna', serif;
+	font-size: 72px;
+
+	position: absolute;
+	right: 60px;
+	bottom: 20px;
+}
+
+.building .character {
+	font-size: 150px;
+}
+
+
 #logo {
 	max-width: 100%;
 	margin-left: 50px;
