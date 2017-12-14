@@ -15,6 +15,8 @@ function build() {
 		$('.block').first().remove();
 	}
 
+	$('#main-preloader').fadeOut();
+
 	var scopeActive = 1;
 	var scopesCount = 2;
 
