@@ -6,7 +6,7 @@ function build() {
 
 	var track = $('.track');
 
-	// console.log(scope[0].scrollHeight, track.height());
+	console.log(scope[0].scrollHeight, track.height());
 
 	while(scope[0].scrollHeight > track.height())
 	{
@@ -32,5 +32,5 @@ function build() {
 		$('.scope').removeClass('active');
 		$('.scope-'+scopeActive).addClass('active');
 
-	}, 1000);
+	}, 10000);
 }
