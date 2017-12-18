@@ -65,10 +65,18 @@ body {
 .block {
 	border-top: 1px solid #e3e3e3;
 	padding: 15px 0;
+	display: table;
+	width: 100%;
 }
 
+/*.block:after {
+	display: block;
+	content: '';
+	clear: both;
+}*/
+
 .number {
-	display: inline-block;
+	display: table-cell;
 	vertical-align: middle;
 	width: 150px;
 	padding: 0 25px;
@@ -83,7 +91,7 @@ body {
 }
 
 .info-side {
-	display: inline-block;
+	display: table-cell;
 	vertical-align: middle;
 	/*width: calc(100% - 150px);*/
 	float: right;
@@ -92,11 +100,16 @@ body {
 	width: 80%;
 }
 
+.info-side:after {
+	content: '';
+	clear: both;
+}
+
 .info-side .name {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 30px;
-	max-width: 700px;
+	max-width: 500px;
 }
 
 .info-side .logo {
