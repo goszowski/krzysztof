@@ -34,5 +34,5 @@ function build() {
 		$('.scope').removeClass('active');
 		$('.scope-'+scopeActive).addClass('active');
 
-	}, 2000);
+	}, 10000);
 }
