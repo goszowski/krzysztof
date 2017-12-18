@@ -4,15 +4,17 @@ function build() {
 
 	var scope = $('.scope.active');
 
-	var track = $('.track');
+	// var track = $('.track');
+	var trackHeight = $(window).height() - 415;
 
-	console.log(scope[0].scrollHeight, track.height());
+	console.log(scope[0].scrollHeight, trackHeight);
 
-	while(scope[0].scrollHeight > track.height())
+	while(scope[0].scrollHeight > trackHeight)
 	{
 		console.log('object moved');
 		$('.block').first().clone().appendTo('.scope-2');
 		$('.block').first().remove();
+		console.log(scope[0].scrollHeight, trackHeight);
 	}
 
 	$('#main-preloader').fadeOut();
