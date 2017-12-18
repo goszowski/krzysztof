@@ -7,20 +7,20 @@ function build() {
 	// var track = $('.track');
 	var trackHeight = $(window).height() - 415;
 
-	console.log(scope[0].scrollHeight, trackHeight);
+	// console.log(scope[0].scrollHeight, trackHeight);
 
-	while(scope[0].scrollHeight > trackHeight)
-	{
-		console.log('object moved');
-		$('.block').first().clone().appendTo('.scope-2');
-		$('.block').first().remove();
-		console.log(scope[0].scrollHeight, trackHeight);
-	}
+	// while(scope[0].scrollHeight > trackHeight)
+	// {
+	// 	console.log('object moved');
+	// 	$('.block').first().clone().appendTo('.scope-2');
+	// 	$('.block').first().remove();
+	// 	console.log(scope[0].scrollHeight, trackHeight);
+	// }
 
 	$('#main-preloader').fadeOut();
 
 	var scopeActive = 1;
-	var scopesCount = 2;
+	var scopesCount = $('.scope').length;
 
 	setInterval(function() {
 
@@ -34,5 +34,5 @@ function build() {
 		$('.scope').removeClass('active');
 		$('.scope-'+scopeActive).addClass('active');
 
-	}, 10000);
+	}, 2000);
 }

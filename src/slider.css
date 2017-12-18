@@ -22,7 +22,7 @@ body {
 	font-family: 'Unna', serif;
 	font-size: 72px;
 
-	position: absolute;
+	position: fixed;
 	right: 60px;
 	bottom: 20px;
 }
@@ -67,6 +67,7 @@ body {
 	padding: 15px 0;
 	display: table;
 	width: 100%;
+	table-layout: fixed;
 }
 
 /*.block:after {
@@ -94,7 +95,7 @@ body {
 	display: table-cell;
 	vertical-align: middle;
 	/*width: calc(100% - 150px);*/
-	float: right;
+	/*float: right;*/
 	text-align: right;
 	padding-right: 55px;
 	width: 80%;
